@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2019-3-21, 13:20:08
+    Author     : allwayz
+*/
+
+body {
+    background: url(../images/world.jpg);
+    
+    
+}
+
+
+
+div.box {
+    height: 600px;
+    width: 600px;
+    background-color: #bbbbaa;
+}
+p {
+    
+    hight: 75%;
+    width: 75%;
+    background-color: #0088dd;
+  }
+  
+  pp {
+     hight: 75%;
+    width: 75%; 
+  }
+    
+  ppp{
+      hight: 75%;
+    width: 100%;
+    background-color: #0088dd;
+  }
+
+div.table {
+    width:600px;
+    height:80px;
+    margin:0 auto;
+    text-align:center;
+    border: 1px ;
+    
+}
+
+div.header{
+    color: black;
+    font-size: 100px;   
+}
+
+
+weather_table{
+    
+    font-size:22px;
+    border-collapse:separate;
+    border-spacing:10px;
+    width: 600px;
+    border: "2" ;
+    bgcolor: "#efefef";
+    
+}
+
+
+local_header{
+    font-size: 30px;
+    text-align: left;
+}
+
+ 
+#a1{
+    background-color: yellow; 
+        
+}
+#a2{
+    background-color: red;
+}
+
