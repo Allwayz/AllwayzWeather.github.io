@@ -9,12 +9,88 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>html Page</title>
+        <title>JSP Page</title>
         <link href="newcss.css" type="text/css" rel="stylesheet" 
-            
+        
     </head>
-    <body style="background:url(../Images/world.jpg);background-size:cover">
-        <div>
+    <body style="background:url(../Images/world.jpg);background-size:cover" onload="show()">
+        
+        
+        <script>
+function show(){ 
+var date = new Date();
+var now = ""; 
+now = date.getFullYear()+"/"; 
+now = now + (date.getMonth()+1)+"/";
+now = now + date.getDate()+"   "; 
+now = now + date.getHours()+":"; 
+now = now + date.getMinutes()+":"; 
+now = now + date.getSeconds(); 
+document.getElementById("nowDiv").innerHTML = now; 
+setTimeout("show()",1000); 
+} 
+</script>
+        
+        
+        <!-- head -->
+        <div class="head">
+            <h1 style="vertical-align: central; font-family: Arial"><b>ALLWAYZ's Weather Forecast</b></h1>
+            <h3 style="vertical-align: bottom">Today is: </h3><h3 id="nowDiv"></h3>
+        </div>
+        <div class="guide">
+            <ul>
+                <li>
+                    <a class="active" href="Homepage.jsp">Homepage</a>
+                </li>
+                <li>
+                    <a href="Beijing.jsp">Beijing</a>
+                </li>
+                <li>
+                    <a href="Toyko.jsp">Toyko</a>
+                </li>
+                <li>
+                    <a href="Seoul.jsp">Seoul</a>
+                </li>
+                <li>
+                    <a href="NewYork.jsp">New York</a>
+                </li>
+                <li>
+                    <a href="Washington.jsp">Washington</a>
+                </li>
+                <li>
+                    <a href="Ottawa.jsp">Ottawa</a>
+                </li>
+                <li>
+                    <a href="Barcelona.jsp">Barcelona</a>
+                </li>
+                <li>
+                    <a href="Brague.jsp">Brague</a>
+                </li>
+                <li>
+                    <a href="Amsterdam.jsp">Amsterdam</a>
+                </li>
+                <li>
+                    <a href="Cairo.jsp">Cairo</a>
+                </li>
+                <li>
+                    <a href="Wakanda.jsp">Wakanda</a>
+                </li>
+                <li>
+                    <a href="CapeTown.jsp">Cape Town</a>
+                </li>
+                <li>
+                    <a href="Canberra.jsp">Canberra</a>
+                </li>
+                <li>
+                    <a href="Sydney.jsp">Sydney</a>
+                </li>
+                <li>
+                    <a href="Melbourne.jsp">Melbourne</a>
+                </li>
+            </ul> 
+        </div>
+        
+        <div class="box">
             
             <table class="test">
 	<tr>
@@ -37,9 +113,9 @@
                 <div class="dropdown">
                 <button class="dropbtn">Asian</button>
                     <div class="dropdown-content">
-                        <a href="Beijing .html">Beijing</a>
-                        <a href="Toyko.html">Toyko</a>
-                        <a href="Seoul.html">Seoul</a>
+                        <a href="Beijing .jsp">Beijing</a>
+                        <a href="Toyko.jsp">Toyko</a>
+                        <a href="Seoul.jsp">Seoul</a>
                     </div>
                 </div>
             </td>
@@ -48,9 +124,9 @@
                 <div class="dropdown">
                 <button class="dropbtn">North America</button>
                     <div class="dropdown-content">
-                        <a href="NewYork.html">New York</a>
-                        <a href="Wanshington.html">Washington</a>
-                        <a href="Ottawa.html">Ottawa</a>
+                        <a href="NewYork.jsp">New York</a>
+                        <a href="Wanshington.jsp">Washington</a>
+                        <a href="Ottawa.jsp">Ottawa</a>
                     </div>
                 </div>
             </td> 
@@ -59,9 +135,9 @@
                 <div class="dropdown">
                 <button class="dropbtn">Europe</button>
                     <div class="dropdown-content">
-                        <a href="Barcelona.html">Barcelona</a>
-                        <a href="Brague.html">Brague</a>
-                        <a href="Amsterdan.html">Amsterdam</a>
+                        <a href="Barcelona.jsp">Barcelona</a>
+                        <a href="Brague.jsp">Brague</a>
+                        <a href="Amsterdan.jsp">Amsterdam</a>
                     </div>
                 </div>
             </td>
@@ -70,9 +146,9 @@
                 <div class="dropdown">
                 <button class="dropbtn">Africa</button>
                     <div class="dropdown-content">
-                        <a href="Cairo.html">Cairo</a>
-                        <a href="Wakanda.html">Wakanda</a>
-                        <a href="CapeTown.html">Cape Town</a>
+                        <a href="Cairo.jsp">Cairo</a>
+                        <a href="Wakanda.jsp">Wakanda</a>
+                        <a href="CapeTown.jsp">Cape Town</a>
                     </div>
                 </div>
             </td>
@@ -81,9 +157,9 @@
                 <div class="dropdown">
                 <button class="dropbtn">Oceania</button>
                     <div class="dropdown-content">
-                        <a href="Canberra.html">Canberra</a>
-                        <a href="Sydney.html">Sydney</a>
-                        <a href="Melbourne.html">Melbourne</a>
+                        <a href="Canberra.jsp">Canberra</a>
+                        <a href="Sydney.jsp">Sydney</a>
+                        <a href="Melbourne.jsp">Melbourne</a>
                     </div>
                 </div>
             </td> 
@@ -167,7 +243,12 @@
         
         
         
-        
+    <br><br>
+        <hr>
+        <footer id="bottom">
+        <ppp style="text-align: left">CopyRight Allwayz@copy2019 </ppp>
+         </footer>
+        <hr>   
         
         
         </div> 
