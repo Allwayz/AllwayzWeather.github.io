@@ -7,9 +7,7 @@ and open the template in the editor.
     Created on : 2019-5-16, 19:24:43
     Author     : Allwayz
 */
-div.center{
 
-}
 
 .dropbtn {
     background-color: #4CAF50;
@@ -19,12 +17,10 @@ div.center{
     border: none;
     cursor: pointer;
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -32,23 +28,98 @@ div.center{
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
-
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
-
 .dropdown-content a:hover {background-color: #f1f1f1}
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+
+h3{
+    display: inline-block;
+}
+
+
+
+.head{
+    width: 1800px;
+    height: 100px;
+    background-color: greenyellow;
+}
+
+.guide{
+    width: 1800px;
+    height: 40px;
+    background-color: #669900;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+li a.active {
+    background-color: #111;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 pp {
@@ -70,6 +141,13 @@ p.floatleft{
 	text-align: left;
 }
 
+ppp{
+      hight: 75%;
+    width: 100%;
+    background-color: #0088dd;
+    text-align: left;
+  }
+
 
 
 
@@ -77,7 +155,7 @@ p.floatleft{
 .countryTable{
 	background-color: aqua;
 	border-color: black;
-	border: "1";
+	border: 1px;
 	
 	
 	
@@ -138,19 +216,22 @@ p.floatleft{
 	
 }
 
+div.box {
+    width: 100%;
+}
 
 
 
 .test{
-	
-	background-color: aqua;
-	border-style: double;
+        background-color: aqua;
+	background-color: rgba(0, 255, 255,0.4);
+        border-style: double;
 	border-color: black;
 	width: 75%;
 	line-height: 50px;
 	border-collapse:inherit;
 	table-layout: fixed;
-	align-content: center;
+        alignment-adjust: central;
 	
 }
 
