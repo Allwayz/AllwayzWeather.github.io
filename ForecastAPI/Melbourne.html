@@ -1,21 +1,98 @@
-<%-- 
-    Document   : Melbourne
-    Created on : 2019-5-16, 21:32:00
-    Author     : Allwayz
---%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>html Page</title>
+        <title>Melbourne</title>
         <link href="newcss.css" type="text/css" rel="stylesheet" />
+        
+        
+        
+        <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+	<script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="jqueryui/style.css">
+	<script>
+	$(function() {
+		$( "#datepicker" ).datepicker();
+	});
+	</script>
     </head>
     <body style="background:url(../Images/OA.png);background-size:cover">
         
+        <!-- head -->
+        <div class="head">
+            <h1 style="vertical-align: central; font-family: Arial"><b>ALLWAYZ's Weather Forecast</b></h1>
+             <h3 style="vertical-align: bottom">Today is: </h3>  <h3 id="pickdate"></h3>
+        </div>
+        <div class="guide">
+            <ul>
+                <li>
+                    <a href="Homepage.html">Homepage</a>
+                </li>
+                <li>
+                    <a href="Beijing.html">Beijing</a>
+                </li>
+                <li>
+                    <a href="Toyko.html">Toyko</a>
+                </li>
+                <li>
+                    <a href="Seoul.html">Seoul</a>
+                </li>
+                <li>
+                    <a href="NewYork.html">New York</a>
+                </li>
+                <li>
+                    <a href="Washington.html">Washington</a>
+                </li>
+                <li>
+                    <a href="Ottawa.html">Ottawa</a>
+                </li>
+                <li>
+                    <a href="Barcelona.html">Barcelona</a>
+                </li>
+                <li>
+                    <a href="Brague.html">Brague</a>
+                </li>
+                <li>
+                    <a href="Amsterdam.html">Amsterdam</a>
+                </li>
+                <li>
+                    <a href="Cairo.html">Cairo</a>
+                </li>
+                <li>
+                    <a href="Wakanda.html">Wakanda</a>
+                </li>
+                <li>
+                    <a href="CapeTown.html">Cape Town</a>
+                </li>
+                <li>
+                    <a href="Canberra.html">Canberra</a>
+                </li>
+                <li>
+                    <a href="Sydney.html">Sydney</a>
+                </li>
+                <li>
+                    <a class="active" href="Melbourne.html">Melbourne</a>
+                </li>
+            </ul> 
+        </div>
         
-       <table class="test" style="opacity: 0.4">
+        
+        <script>
+            function print(){  
+                var date=myform.name.value;
+                document.getElementById("pickdate").innerHTML=date;  
+  }  
+        </script>
+        
+        
+        <form name="myform">  
+            <p>Date：<input type="text" name="name" id="datepicker"></p>  
+            <input type="button" name="button" value="Commit" onclick="print()" />  
+        </form>
+        
+       <table class="test">
 	<tr>
 		<td colspan="4" rowspan="3">
 		<table>
@@ -208,6 +285,13 @@
 	</table>	 
         
         <a href="Homepage.html">Back to HomePage</a>
+        
+        <br><br>
+        <hr>
+        <footer id="bottom">
+        <ppp style="text-align: left">CopyRight Allwayz@copy2019 </ppp>
+         </footer>
+        <hr>
         
     </body>
 </html>
