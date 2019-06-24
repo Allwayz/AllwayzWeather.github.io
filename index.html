@@ -12,14 +12,24 @@ and open the template in the editor.
         <link href="web/Forecast_000/C01.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
-        <div>TODO write content</div>
-        <br><br><br><hr>
-        <a href="web/Forecast_000/Homepaje.jsp">Homepage</a>
-        <br><br><br><hr>
-        <a href="https://www.baidu.com">Homepage</a>
-        <br><br><br><hr>
-        <a href="web/Forecast_000/HP.html">Homepage111</a>
-	 <br><br><br><hr>
+		<br><br><br><br>
+        <div id="IndexBox" style="background-color: antiquewhite">
+			
+        <a href="https://www.baidu.com">Baidu</a>
+	 		<br><br><br><hr>
         <a href="ForecastAPI/Homepage.html">Final Weather Forecast Pro</a>
+			<br><br><br><hr>
+			<p style="font-size: x-large">基础代谢计算</p>
+			<form oninput="x.value= 66 + 13.7 * parseInt(a.value)+ 5 * parseInt(b.value) - 6.8 * parseInt(c.value)">
+				
+				<h3>重量(KG)：</h3><input type="number" id="a" value="60">
+				<h3>身高(CM)：</h3><input type="number" id="b" value="170">
+				<h3>年龄：</h3><input type="number" id="c" value="19">
+				<h2><strong>Result: </strong> <strong id="Answer"><output name="x" for="WE HI Age"></output></strong></h2>
+				
+			
+			</form>
+			
+			
     </body>
 </html>
