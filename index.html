@@ -22,13 +22,104 @@ and open the template in the editor.
 			<p style="font-size: x-large">基础代谢计算</p>
 			<form oninput="x.value= 66 + 13.7 * parseInt(a.value)+ 5 * parseInt(b.value) - 6.8 * parseInt(c.value)">
 				
-				<h3>重量(KG)：</h3><input type="number" id="a" value="60">
-				<h3>身高(CM)：</h3><input type="number" id="b" value="170">
-				<h3>年龄：</h3><input type="number" id="c" value="19">
-				<h2><strong>Result: </strong> <strong id="Answer"><output name="x" for="WE HI Age"></output></strong></h2>
+				<h3>重量(KG)：</h3><input type="number" id="a" value="null">
+				<h3>身高(CM)：</h3><input type="number" id="b" value="null">
+				<h3>年龄：</h3><input type="number" id="c" value="null">
+				<h2><strong>Result: </strong> <strong id="Answer"><output name="x" ></output></strong></h2>
 				
 			
 			</form>
+			<br><br><br><hr>
+			
+			
+			<p style="font-size: x-large">碳水循环饮食法</p>
+			
+			<form oninput="t.value = parseInt(parseInt(l.value) * 1.25 * 2.2); 
+						   
+						   p.value =parseInt( 2.42 * parseInt(parseInt(l.value) - (parseInt(l.value) * (parseInt(per.value)/100))));
+						   
+						   f.value = parseInt ((( 1.2*
+						   (66 + 13.7 * parseInt(l.value)+ 5 * parseInt(h.value) - 6.8 * parseInt(y.value))
+						   )-(500 + 4*(
+						   parseInt(parseInt(l.value) * 1.25 * 2.2)
+						   +
+						   parseInt( 2.2 * 1.1 * parseInt(l.value - (parseInt(l.value) * (parseInt(per.value)/100))))
+						   )))/9)  ;
+						   
+						   
+						   
+						   ht.value = parseInt( 4.8125 * parseInt(l.value));
+						   
+						   
+						   
+						   hf.value = parseInt( 0.5 * parseInt ((( 1.2*
+						   (66 + 13.7 * parseInt(l.value)+ 5 * parseInt(h.value) - 6.8 * parseInt(y.value))
+						   )-(500 + 4*(
+						   parseInt(parseInt(l.value) * 1.25 * 2.2)
+						   +
+						   parseInt( 2.2 * 1.1 * parseInt(l.value - (parseInt(l.value) * (parseInt(per.value)/100))))
+						   )))/9) );
+						   
+						   
+						   
+						   
+						   
+						   
+						   
+						   lf.value = parseInt( 1.5* parseInt ((( 1.2*
+						   (66 + 13.7 * parseInt(l.value)+ 5 * parseInt(h.value) - 6.8 * parseInt(y.value))
+						   )-(500 + 4*(
+						   parseInt(parseInt(l.value) * 1.25 * 2.2)
+						   +
+						   parseInt( 2.2 * 1.1 * parseInt(l.value - (l.value * (per.value/100))))
+						   )))/9) );
+						   
+						   lt.value = parseInt( 0.6875 * (l.value))
+						   
+						   ">
+				<h3>体重(KG)：</h3><input type="number" id="l" value="null">
+				<h3>身高(CM)：</h3><input type="number" id="h" value="null">
+				<h3>年龄：</h3><input type="number" id="y" value="null">
+				<h3>体脂率(%)：</h3><input type="number" id="per" value="null">
+			<table border="1">
+				<tr>
+					<th colspan="4">
+						 三大营养素摄入量（单位 g）
+					</th>
+				
+				</tr>
+			  <tr>
+				<th>	</th>
+				  <th>高碳日</th>
+				  <th>中碳日</th>
+				  <th>低碳日</th>
+			  </tr>
+			  <tr>
+				<th>碳水</th>
+				  <td><output name = "ht"></output></td>
+				  <td><output name = "t"></output></td>
+				  <td><output name = "lt"></output></td>
+				
+			  </tr>
+				<tr>
+				<th>蛋白质</th>
+					<td colspan="3"><output name="p"></output></td>
+			  </tr>
+				<tr>
+				<th>脂肪</th>
+					<td><output name="hf"></output></td>
+					<td><output name="f"></output></td>
+					<td><output name="lf"></output></td>
+				
+			  </tr>
+			</table>
+			<h2>碳水 每磅体重1.25g</h2>
+			<h2>蛋白质 每磅瘦体重 1~1.2g</h2>
+				<h2>瘦体重 = 体重 - （体重 * 体脂率）</h2>
+			<h3>1 kg = 2.2 lb</h3>
+				<h3>仅供参考，碳水可以适当拉低一点点，效果更好哦！</h3>
+			</form>
+			
 			
 			
     </body>
